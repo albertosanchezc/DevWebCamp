@@ -52,7 +52,7 @@ class Router
         $currentUrl = $_SERVER['PATH_INFO'] ?? '/';
 
         if(str_contains($currentUrl, '/admin')){
-            //debuguear('Si lo contiene');
+            // debuguear('Si lo contiene');
             include_once __DIR__ . '/views/admin-layout.php';
         }else {
             //debuguear('No lo contiene');
