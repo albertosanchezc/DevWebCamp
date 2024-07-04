@@ -49,7 +49,7 @@ class Router
         $contenido = ob_get_clean(); // Limpia el Buffer
 
         // Utilizar el Layout de acuerdo a la URL
-        $currentUrl = $_SERVER['PATH_INFO'] ?? '/';
+        $currentUrl = $_SERVER['REQUEST_URI'] ?? '/';
 
         if(str_contains($currentUrl, '/admin')){
             // debuguear('Si lo contiene');
